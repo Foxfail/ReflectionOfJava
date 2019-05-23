@@ -10,8 +10,8 @@ public class Main {
         int number = myClass.getNumber();
         String name = null; // а геттера name нету =(
 
-        System.out.println("number: " + number);
-        System.out.println("name: " + name);
+        System.out.println("number: " + number); // number: 0
+        System.out.println("name: " + name); // name: null
 
         try {
             System.out.println("Происходит магия рефлексии!!!");
@@ -24,8 +24,8 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println("number: " + number);
-        System.out.println("name: " + name);
+        System.out.println("number: " + number); // number: 0
+        System.out.println("name: " + name); // name: myName
 
     }
 }
