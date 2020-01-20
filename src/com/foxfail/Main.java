@@ -6,6 +6,13 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /*
+         * Реализован класс MyClass с приватными полями number и name
+         * реализован геттер getNumber
+         * однако getName отсутвует.
+         * Поэтому используем рефлексию что бы получить доступ к полю и установить в него значение
+         */
+
         MyClass myClass = new MyClass();
         int number = myClass.getNumber();
         String name = null; // а геттера name нету =(
